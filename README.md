@@ -1,0 +1,1 @@
+[简历](/resume/base.md ':include')
