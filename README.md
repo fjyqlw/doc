@@ -1,1 +1,1 @@
-[简历](/resume/base.md ':include')
+[简历](/tmp/tmp1.md ':include')
