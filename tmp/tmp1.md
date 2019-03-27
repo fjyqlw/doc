@@ -201,3 +201,67 @@ SELECT vs.sid, vs.serial# FROM v$locked_object vlo, dba_objects do, v$session vs
 ```sql
 ALTER system KILL session 'sid,serial#'
 ```
+
+### CountDownLatch
+
+```java
+特有方法： 
+public CountDownLatch(int count); //指定计数的次数，只能被设置1次
+public void countDown();          //调用此方法则计数减1
+public void await() throws InterruptedException   //调用此方法会一直阻塞当前线程，直到计时器的值为0，除非线程被中断。
+Public Long getCount();           //得到当前的计数
+Public boolean await(long timeout, TimeUnit unit) //调用此方法会一直阻塞当前线程，直到计时器的值为0，除非线程被中断或者计数器超时，返回false代表计数器超时。
+From Object Inherited：
+Clone、equals、hashCode、notify、notifyALL、wait等。
+```
+
+#### 使用场景
+1. 开启多个线程分块下载一个大文件，每个线程只下载固定的一截，最后由另外一个线程来拼接所有的分段。
+
+2. 应用程序的主线程希望在负责启动框架服务的线程已经启动所有的框架服务之后再执行。
+
+3. 确保一个计算不会执行，直到所需要的资源被初始化。
+
+#### 示例
+
+```java
+public class CountDownLatchDemo {  
+    final static SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");  
+    public static void main(String[] args) throws InterruptedException {  
+        CountDownLatch latch=new CountDownLatch(2);//两个工人的协作  
+        Worker worker1=new Worker("zhang san", 5000, latch);  
+        Worker worker2=new Worker("li si", 8000, latch);  
+        worker1.start();//  
+        worker2.start();//  
+        latch.await();//等待所有工人完成工作  
+        System.out.println("all work done at "+sdf.format(new Date()));  
+    }  
+      
+      
+    static class Worker extends Thread{  
+        String workerName;   
+        int workTime;  
+        CountDownLatch latch;  
+        public Worker(String workerName ,int workTime ,CountDownLatch latch){  
+             this.workerName=workerName;  
+             this.workTime=workTime;  
+             this.latch=latch;  
+        }  
+        public void run(){  
+            System.out.println("Worker "+workerName+" do work begin at "+sdf.format(new Date()));  
+            doWork();//工作了  
+            System.out.println("Worker "+workerName+" do work complete at "+sdf.format(new Date()));  
+            latch.countDown();//工人完成工作，计数器减一  
+  
+        }  
+          
+        private void doWork(){  
+            try {  
+                Thread.sleep(workTime);  
+            } catch (InterruptedException e) {  
+                e.printStackTrace();  
+            }  
+        }  
+    }  
+}
+```
