@@ -8,8 +8,15 @@
 - 设置登录密码
 > config set requirepass 123456
 
+- 远程登录
+> redis-cli -h 127.0.0.1 -p 9005 -a 123456
+
 - 设置过期时间（单位是秒）
 > expire key 30
+
+- 选择数据库
+
+> select 0
 
 ## string
 二进制安全，一个key最大可以512M
@@ -42,6 +49,12 @@
 - 获取指定范围列表
 > lrange key 0 5
 
+- 获取长度
+> llen key
+
+- 移除并去除列表第一个元素
+> lpop key
+
 ## set
 - 添加值
 > sadd key a
@@ -51,4 +64,15 @@
 
 - 列出所有
 > smembers key
+
+## sorted set
+- 添加值
+```
+zadd key 0 a
+zadd key 1 b
+```
+- 获取指定权重范围
+```
+zrangebyscore key 0 5
+```
 
