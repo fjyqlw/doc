@@ -1,7 +1,4 @@
 - [首页](/)
-- **简历**
-- [基本简历](/resume/base)
-- [简历1](/resume/base.1)
 - **Java知识点**
 - [JVM内存模型](/java/jvm1)
 - [JMM与内存可见性](/java/jmm)
