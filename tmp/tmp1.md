@@ -190,4 +190,14 @@ sorted set:zadd myzset 0 a;zadd myzset 2 b;zrangebyscore myzset 0 5;
 
 ## 编码规范
 
+## 项目中遇到的最难的问题，如何解决
+周六下午，客户反映手工监测系统突然某几个页面无法响应数据了，而其他功能又是正常的。经过分析有问题的那些接口，发现都包含了同一个业务表，于是直接把这个业务表放到plsql上去查询发现也查不出来，由此推断应该是锁表了，于是查询所有加锁的表及session，该表确实被锁了。把该表的session结束掉之后系统恢复正常。经过询问开发和测试是否操作过这个表，最终发现是测试在头天晚上下班前应客户要求修改了错误数据，使用for Update后未提交导致锁表问题。
 
+```sql
+SELECT vs.sid, vs.serial# FROM v$locked_object vlo, dba_objects do, v$session vs 
+ WHERE do.object_id = vlo.object_id AND vlo.session_id = vs.sid; 
+```
+
+```sql
+ALTER system KILL session 'sid,serial#'
+```
