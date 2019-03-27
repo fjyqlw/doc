@@ -6,6 +6,8 @@
 - [JVM内存模型](/java/jvm1)
 - [JMM与内存可见性](/java/jmm)
 - [类加载机制](/java/class)
+- **Redis**
+- [基本介绍](/redis/)
 - **技术文档**
 - [Markdown语法](/markdown/)
 - **其他**
