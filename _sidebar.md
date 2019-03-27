@@ -8,6 +8,8 @@
 - [类加载机制](/java/class)
 - **Redis**
 - [基本介绍](/redis/)
+- **临时**
+- [tmp1](/tmp/tmp1)
 - **技术文档**
 - [Markdown语法](/markdown/)
 - **其他**
