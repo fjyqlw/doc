@@ -202,7 +202,7 @@ SELECT vs.sid, vs.serial# FROM v$locked_object vlo, dba_objects do, v$session vs
 ALTER system KILL session 'sid,serial#'
 ```
 
-### CountDownLatch
+## CountDownLatch
 
 ```java
 特有方法： 
@@ -215,14 +215,14 @@ From Object Inherited：
 Clone、equals、hashCode、notify、notifyALL、wait等。
 ```
 
-#### 使用场景
+### 使用场景
 1. 开启多个线程分块下载一个大文件，每个线程只下载固定的一截，最后由另外一个线程来拼接所有的分段。
 
 2. 应用程序的主线程希望在负责启动框架服务的线程已经启动所有的框架服务之后再执行。
 
 3. 确保一个计算不会执行，直到所需要的资源被初始化。
 
-#### 示例
+### 示例
 
 ```java
 public class CountDownLatchDemo {  
