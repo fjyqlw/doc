@@ -6,7 +6,8 @@
         {
             "label": "提交到远程",
             "type": "shell",
-            "command": "./commit.bat"
+            "command": "./commit.bat",
+            "problemMatcher": []
         }
     ]
 }
