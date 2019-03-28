@@ -5,6 +5,8 @@
 - [类加载机制](/java/class)
 - **SpringBoot**
 - [SpringBoot](/springboot/)
+- **SpringCloud**
+- [SpringCloud](/springcloud/)
 - **数据库**
 - [MySQL](/database/mysql)
 - **Redis**
