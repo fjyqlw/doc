@@ -3,6 +3,10 @@
 - [JVM内存模型](/java/jvm1)
 - [JMM与内存可见性](/java/jmm)
 - [类加载机制](/java/class)
+- **SpringBoot**
+- [SpringBoot](/springboot/)
+- **数据库**
+- [MySQL](/database/mysql)
 - **Redis**
 - [基本介绍](/redis/)
 - **临时**
