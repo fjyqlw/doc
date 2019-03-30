@@ -3,51 +3,27 @@
 ## 类加载顺序
 
 1. 加载
-
-   文件到内存
+   查找和加载二进制数据，在java堆内存中创建一个java.lang.Class类的对象
 
 2. 验证
-
-   文件格式
-
-   元数据
-
-   字节码
-
-   符号引用
-
+   验证文件格式、元数据、字节码、符号引用
 3. 准备
-
-   类变量内存
-
+   给类静态变量分配内存空间，赋予默认值
 4. 解析
-
-   引用替换
-
-   字段解析
-
-   接口解析
-
-   方法解析
-
+   把类中的符号引用转换为直接引用
 5. 初始化
-
-   静态块
-
-   静态变量
-
+   给类静态变量赋予正确的初始值
 6. 使用
-
-   实例化
-
+   对象实例化
 7. 卸载
-
-   GC
+   GC回收
 
 ## 类加载器
 
 ### 双亲委派模式
-   一个类在加载类是，先把请求委托给父类的加载器，如果父类还存在父类，则继续向上委托，指导顶层的启动类加载器
+BootStrapClassLoader-ExtClassLoader-AppClassLoader
+
+当AppClassLoader收到类加载请求的时候，不会直接去加载，而是委托给父类ExtClassLoader加载，ExtClassLoader又委托给BootStrapClassLoader，当BootStrapClassLoader无法加载该类的时候，会使用ExtClassLoader，当ExtClassLoader也无法加载类的时候，会使用APPClassLoader加载，如果APPClassLoader也无法就加载该类，则跑出ClassNotFoundException
 
 #### 好处
 - 避免类重复加载
