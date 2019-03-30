@@ -11,6 +11,8 @@
 - [MySQL](/database/mysql)
 - **Redis**
 - [基本介绍](/redis/)
+- **设计模式**
+- [单例模式](/pattern/singleton)
 - **临时**
 - [tmp1](/tmp/tmp1)
 - **面试题**
