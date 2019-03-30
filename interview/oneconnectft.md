@@ -26,10 +26,19 @@ mysql的引擎有innodb、Memory、MyISAM
 ## 二
 
 ### 为什么要用spring
+1. 方便解耦，便于开发（Spring就是一个大工厂，可以将所有对象的创建和依赖关系维护都交给spring管理）
+2. spring支持aop编程（spring提供面向切面编程，可以很方便的实现对程序进行权限拦截和运行监控等功能）
+3. 声明式事务的支持（通过配置就完成对事务的支持，不需要手动编程）
+4. 方便程序的测试，spring 对junit4支持，可以通过注解方便的测试spring 程序
+5. 方便集成各种优秀的框架（）
+6. 降低javaEE API的使用难度（Spring 对javaEE开发中非常难用的一些API 例如JDBC,javaMail,远程调用等，都提供了封装，是这些API应用难度大大降低）
 
+[Spring优势](https://www.cnblogs.com/song1314/articles/4568379.html)
 ### spring的IOC和AOP实现用了什么技术
+IOC使用了反射的技术，AOP使用了动态台历
 
 ### 说说项目中用到过的spring的AOP场景
+通过注解实现访问日志
 
 ### 说说什么是springcloud
 
