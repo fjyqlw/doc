@@ -20,6 +20,7 @@
 - [选择排序](/algorithm/select-sort)
 - [插入排序](/algorithm/insert-sort)
 - [希尔排序](/algorithm/shell-sort)
+- [快速排序](/algorithm/quick-sort)
 - **临时**
 - [tmp1](/tmp/tmp1)
 - **面试题**
