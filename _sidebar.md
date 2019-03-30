@@ -13,6 +13,13 @@
 - [基本介绍](/redis/)
 - **设计模式**
 - [单例模式](/pattern/singleton)
+- [装饰器模式](/pattern/decorator)
+- [代理模式](/pattern/proxy)
+- **算法**
+- [冒泡排序](/algorithm/bubble-sort)
+- [选择排序](/algorithm/select-sort)
+- [插入排序](/algorithm/insert-sort)
+- [希尔排序](/algorithm/shell-sort)
 - **临时**
 - [tmp1](/tmp/tmp1)
 - **面试题**
