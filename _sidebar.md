@@ -23,4 +23,5 @@
 - **其他**
 - [项目地址](/project/)
 - [项目设计模式](/project/pattern)
+- [项目遇到的问题](/project/problem)
 - [书签](/bookmark/)
