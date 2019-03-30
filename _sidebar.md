@@ -13,6 +13,9 @@
 - [基本介绍](/redis/)
 - **临时**
 - [tmp1](/tmp/tmp1)
+- **面试题**
+- [金蝶](/interview/kingdee)
+- [壹账通](/interview/oneconnectft)
 - **技术文档**
 - [Markdown语法](/markdown/)
 - **其他**
