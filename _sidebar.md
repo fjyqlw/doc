@@ -22,4 +22,5 @@
 - [Markdown语法](/markdown/)
 - **其他**
 - [项目地址](/project/)
+- [项目设计模式](/project/pattern)
 - [书签](/bookmark/)

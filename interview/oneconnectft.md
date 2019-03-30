@@ -9,9 +9,10 @@ jvm中有堆、方法区、虚拟机栈、本地方法栈、程序计数器，�
 [详细](/java/class?id=java类加载机制)
 
 ### mysql的引擎有哪些
-
+mysql的引擎有innodb、Memory、MyISAM
+[详细](/database/mysql)
 ### 项目中用过哪些设计模式
-
+[详细](/project/pattern)
 ### 单例模式的使用场景
 
 ### 单例对象是否会被回收
