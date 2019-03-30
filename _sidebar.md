@@ -21,6 +21,7 @@
 - [插入排序](/algorithm/insert-sort)
 - [希尔排序](/algorithm/shell-sort)
 - [快速排序](/algorithm/quick-sort)
+- [堆排序](/algorithm/heap-sort)
 - **临时**
 - [tmp1](/tmp/tmp1)
 - **面试题**
