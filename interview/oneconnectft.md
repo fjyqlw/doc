@@ -14,7 +14,7 @@ mysql的引擎有innodb、Memory、MyISAM
 ### 项目中用过哪些设计模式
 [详细](/project/pattern)
 ### 单例模式的使用场景
-
+[单例模式的使用场景](/pattern/singleton?id=使用场景)
 ### 单例对象是否会被回收
 
 ### springMVC核心流程
