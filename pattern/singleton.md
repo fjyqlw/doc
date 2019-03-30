@@ -17,3 +17,33 @@ final class  Singleton {
 ```
 
 ## 双重加锁
+
+```java
+final class Singleton {
+    private static Singleton INSTANCE = null;
+    private Singleton() {}
+    
+    public static Singleton getInstance() {
+        if (null == INSTANCE) {
+            synchronized (Singleton.class) {
+                if (null == INSTANCE) {
+                    INSTANCE = new Singleton();
+                }
+            }
+        }
+        
+        return INSTANCE;
+    }
+}
+```
+
+## 枚举方式
+```java
+public enum Singleton {
+    INSTANCE;
+
+    public void todo() {
+        System.out.println("todo");
+    }
+}
+```
