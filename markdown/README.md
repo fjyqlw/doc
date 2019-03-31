@@ -72,6 +72,15 @@
 1. cccc
 2. dddd
 
+## 上下角标
+
+```markdown
+H~2~O is是液体。
+H^2^
+H<sub>333<sup>222
+```
+H<sub>333<sup>222
+
 ## 图片
 
 ```

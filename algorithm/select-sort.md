@@ -14,19 +14,21 @@ data{44,77,55,33,66}
 
 ```java
 public class SelectSort {
-    public static void main(String [] args){
-        int[] data = {11, 66, 33, 44, 77, 55};
+    public static void main(String[] args) {
+        int[] data = {11, 66, 66, 44, 77, 55};
         System.out.println(Arrays.toString(data));
-        int minData=0;
-        for(int i=0;i<data.length;i++){
-            minData=data[i];
-            for(int j=i+1;j<data.length;j++){
-                if(data[j]<minData){
-                    data[j]=data[j]^minData;
-                    minData=minData^data[j];
-                    data[j]=data[j]^minData;
+
+        for (int i = 0; i < data.length; i++) {
+            int idx = i;
+            for (int j = i + 1; j < data.length; j++) {
+                if (data[j] < data[idx]) {
+                    idx = j;
                 }
-                data[i]=minData;
+            }
+            if (idx > i) {
+                int tmp = data[i];
+                data[i] = data[idx];
+                data[idx] = tmp;
             }
         }
         System.out.println(Arrays.toString(data));
