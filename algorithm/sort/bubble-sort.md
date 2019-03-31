@@ -14,7 +14,7 @@ data{44,77,55,33,66}
 - ......
 - 第N次执行：data{33，44，55，66，77}
 
-<img src="../assets/bubble-sort.gif" />
+<img src="assets/bubble-sort.gif" />
 
 ## 参考代码
 
