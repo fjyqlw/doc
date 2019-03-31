@@ -5,7 +5,7 @@
 
 即A[PARENT[i]] >= A[i]。在数组的非降序排序中，需要使用的就是大根堆，因为根据大根堆的要求可知，最大的值一定在堆顶。
 
-<img src="../../assets/heap-sort.gif" />
+<img src="assets/heap-sort.gif" />
 
 ## 参考代码
 ```java
