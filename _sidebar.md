@@ -3,6 +3,7 @@
 - [JVM内存模型](/java/jvm1)
 - [JMM与内存可见性](/java/jmm)
 - [类加载机制](/java/class)
+
 - **SpringBoot**
 - [SpringBoot](/springboot/)
 - **SpringCloud**
@@ -15,14 +16,14 @@
 - [单例模式](/pattern/singleton)
 - [装饰器模式](/pattern/decorator)
 - [代理模式](/pattern/proxy)
-- **排序算法**
-- [冒泡排序](/algorithm/bubble-sort)
-- [选择排序](/algorithm/select-sort)
-- [插入排序](/algorithm/insert-sort)
-- [希尔排序](/algorithm/shell-sort)
-- [快速排序](/algorithm/quick-sort)
-- [堆排序](/algorithm/heap-sort)
-- **经典算法**
+- **[排序算法](/algorithm/sort/)**
+- [冒泡排序](/algorithm/sort/bubble-sort)
+- [选择排序](/algorithm/sort/select-sort)
+- [插入排序](/algorithm/sort/insert-sort)
+- [希尔排序](/algorithm/sort/shell-sort)
+- [快速排序](/algorithm/sort/quick-sort)
+- [堆排序](/algorithm/sort/heap-sort)
+- **[经典算法](/algorithm/)**
 - [Top-K问题](/algorithm/top-k)
 - **临时**
 - [tmp1](/tmp/tmp1)
