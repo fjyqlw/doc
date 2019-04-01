@@ -30,3 +30,4 @@ SHOW ENGINES;
 | BLACKHOLE  | YES  | /dev/null storage engine (anything you write to it disappears) | NO   | NO  | NO|
 | ARCHIVE| YES| Archive storage engine| NO | NO | NO |
 
+## 执行计划（explain）
