@@ -1,1 +1,1 @@
-[简历](/tmp/tmp1.md ':include')
+[首页](/tmp/tmp1.md ':include')
