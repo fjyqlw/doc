@@ -37,6 +37,7 @@
 
 - **[经典算法](/algorithm/)**
     - [Top-K问题](/algorithm/top-k)
+    - [单链表是否成环](/algorithm/link-list-circle)
 
 - **[前端](/web/)**
 
