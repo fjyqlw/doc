@@ -10,11 +10,13 @@
 - **[多线程](/java/concurrent/)**
 - **[集合](/java/collection/)**
 
+- **[Dubbo](/framework/dubbo/)**
+    - [Dubbo](/framework/dubbo/dubbo)
 - **SpringBoot**
-    - [SpringBoot](/springboot/)
+    - [SpringBoot](/framework/springboot/)
 
 - **SpringCloud**
-    - [SpringCloud](/springcloud/)
+    - [SpringCloud](/framework/springcloud/)
 
 - **[关系数据库](/database/relational/)**
     - [MySQL](/database/relational/mysql)
