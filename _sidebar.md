@@ -6,6 +6,7 @@
     - [类加载机制](/java/class)
 
 - **[IO相关](/java/io/)**
+    - [IO问答](/java/io/subject1)
 - **[消息队列](/java/jms/)**
 - **[多线程](/java/concurrent/)**
 - **[集合](/java/collection/)**
@@ -40,6 +41,7 @@
 - **[经典算法](/algorithm/)**
     - [Top-K问题](/algorithm/top-k)
     - [单链表是否成环](/algorithm/link-list-circle)
+    - [计算一个正整数的二进制有几个1](/algorithm/count-one)
 
 - **[前端](/web/)**
 
