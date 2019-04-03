@@ -8,6 +8,7 @@
 - **[IO相关](/java/io/)**
     - [IO问答](/java/io/subject1)
 - **[消息队列](/java/jms/)**
+    - [MQTT](/java/jms/mqtt/mqtt)
 - **[多线程](/java/concurrent/)**
 - **[集合](/java/collection/)**
 
@@ -62,7 +63,7 @@
     - [Markdown语法](/markdown/)
 
 - **其他**
-    - [项目地址](/project/)
+    <!-- - [项目地址](/project/) -->
     - [项目设计模式](/project/pattern)
     - [项目遇到的问题](/project/problem)
     - [书签](/bookmark/)
