@@ -35,7 +35,8 @@ ThreadLocal：只能保存一个变量副本，要保存多个的话需要建多
 Thread.holdLock(obj);
 ### 如何保持线程顺序执行
 在线程start之后，下个线程start之前，调用join方法
-yeild和join区别：yeild会暂停当前线程，回到就绪状态，不会使线程阻塞；而join需要等待调用join的线程结束
+### yeild和join区别
+yeild会暂停当前线程，回到就绪状态，不会使线程阻塞；而join需要等待调用join的线程结束
 ### 线程池提交的队列已满时
 会抛出RejectExectionException异常
 ### 线程池submit和execute
@@ -53,6 +54,7 @@ volatile只有可见性不具有原子性，他能保证在后续的读之前完
 2. 多用同步类，少用wait和notify，比如countDownLatch
 3. 同步块锁定范围尽可能小
 4. 多用并发集合，少用同步集合
+
 ### wait和sleep区别
 都会是线程暂停，wait用于线程之间通信，会释放锁，直到等待条件为真；而sleep会解除对CPU的控制权，但不会释放锁
 
@@ -67,7 +69,7 @@ volatile只有可见性不具有原子性，他能保证在后续的读之前完
 能独立运行，简化配置，自动配置，无代码生成和xml配置，应用监控
 
 ### 核心注解
-@ApringBootApplication包含@SpringbootConfiguration,@EnableAutoConfiguration,@ComponentScan
+@SpringBootApplication包含@SpringbootConfiguration,@EnableAutoConfiguration,@ComponentScan
 
 ### 如何在启动时运行特定代码
 可以在组件上实现CommandLineRunner或者ApplicationRunner
@@ -94,18 +96,18 @@ mybatis首先去缓存中查询结果集，如果有直接返回，没有则查�
 
 
 ## 熟悉JVM，内存模型
- ### 程序计数器：
+### 程序计数器
 1. 字节码解释器通过改变程序计数器来依次读取指令，从而实现代码的流程控制，如：顺序、循环、选择、异常处理等
 2. 在多线程情况下，程序计数器用于记录当前线程的执行位置，从而当前线程被切换回来的时候能够知道该线程上次运行到哪了
 3. 程序及数据是唯一一个不会内存溢出的内存区域，他的生命周期随着线程一起创建和消亡
- 
- ### Java虚拟机栈
+
+### Java虚拟机栈
  描述的是Java为方法执行的内存模型，由一个个栈帧组成，每个栈帧中都拥有
  
- 1. StackOverFlowError
- java虚拟机栈的内存不允许动态扩展时，当前线程请求栈的深度超出了当前java虚拟机栈的最大深度
- 2. OutOfMemoryError
- java虚拟机栈的内存大小允许动态扩展，且当前线程请求栈是内存用完了
+1. StackOverFlowError
+   java虚拟机栈的内存不允许动态扩展时，当前线程请求栈的深度超出了当前java虚拟机栈的最大深度
+2. OutOfMemoryError
+   java虚拟机栈的内存大小允许动态扩展，且当前线程请求栈是内存用完了
  
  
 ### 堆
@@ -124,12 +126,11 @@ mybatis首先去缓存中查询结果集，如果有直接返回，没有则查�
 防止出现重复加载类，防止java核心api被修改
 BootStrapClassLoader-ExtClassLoader-AppClassLoader
 
-当AppClassLoader收到类加载请求的时候，不会直接去加载，而是委托给父类ExtClassLoader加载，ExtClassLoader又委托给BootStrapClassLoader，当BootStrapClassLoader无法加载该类的时候，会使用ExtClassLoader，当ExtClassLoader也无法加载类的时候，会使用APPClassLoader加载，如果APPClassLoader也无法就加载该类，则跑出ClassNotFoundException
+当AppClassLoader收到类加载请求的时候，不会直接去加载，而是委托给父类ExtClassLoader加载，ExtClassLoader又委托给BootStrapClassLoader，当BootStrapClassLoader无法加载该类的时候，会使用ExtClassLoader，当ExtClassLoader也无法加载类的时候，会使用APPClassLoader加载，如果APPClassLoader也无法就加载该类，则抛出ClassNotFoundException
 
 ### 类加载顺序
 1. 加载
    查找和加载二进制数据，在java堆内存中创建一个java.lang.Class类的对象
-
 2. 验证
    验证文件格式、元数据、字节码、符号引用
 3. 准备
@@ -157,9 +158,6 @@ BootStrapClassLoader-ExtClassLoader-AppClassLoader
 解决：增加线程
 4. G1收集器
 -XX:+UseG1GC
-
-## Oracle、Mysql、Postgres
-
 
 ## SQL高级查询
 

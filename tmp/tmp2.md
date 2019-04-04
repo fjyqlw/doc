@@ -1,7 +1,7 @@
 # 临时
 
 ## mybatis一级缓存与二级缓存，缓存什么时候才被清空
-- 二级缓存
+- 二级缓存中，写操作需要设置flushCache='true'，否则会脏读
 ```xml
 <insertid='insertUser' parameterType='cn.itcast.mybatis.po.User' flushCache='true'>
 ```
@@ -17,7 +17,8 @@ Resource注解是J2EE提供的, 而Autowried注解是Spring提供的, 如果想�
 - 接口隔离原则
 - 迪米特法则
 
-## spring事物失效
+## spring事务失效
+
 ## jdk8中hashmap与jkd8以前有什么区别
 ## eclipse中maven多模块开发
 ## springboot中注解@SpringBootApplication
