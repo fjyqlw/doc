@@ -124,6 +124,7 @@ mybatis首先去缓存中查询结果集，如果有直接返回，没有则查�
 ## 类加载机制
 ### 双亲委派模式
 防止出现重复加载类，防止java核心api被修改
+
 BootStrapClassLoader-ExtClassLoader-AppClassLoader
 
 当AppClassLoader收到类加载请求的时候，不会直接去加载，而是委托给父类ExtClassLoader加载，ExtClassLoader又委托给BootStrapClassLoader，当BootStrapClassLoader无法加载该类的时候，会使用ExtClassLoader，当ExtClassLoader也无法加载类的时候，会使用APPClassLoader加载，如果APPClassLoader也无法就加载该类，则抛出ClassNotFoundException
