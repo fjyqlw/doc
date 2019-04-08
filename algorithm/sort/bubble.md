@@ -21,22 +21,29 @@ data{44,77,55,33,66}
 ```java
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] data = {110, 67, 501, 44, 37, 25};
+        int[] data = {110, 67, 50, 44, 37, 25};
         System.out.println(Arrays.toString(data));
-
         for (int i = 0; i < data.length - 1; i++) {
-            for (int j = i + 1; j < data.length; j++) {
-                if (data[i] > data[j]) {
+            for (int j = 0; j < data.length-i-1; j++) {
+                if (data[j] > data[j+1]) {
                     int tmp = data[j];
-                    data[j] = data[i];
-                    data[i] = tmp;
+                    data[j] = data[j+1];
+                    data[j+1] = tmp;
                 }
             }
+            System.out.println(Arrays.toString(data));
         }
 
-        System.out.println(Arrays.toString(data));
     }
 }
+```
+```
+[110, 67, 50, 44, 37, 25]
+[67, 50, 44, 37, 25, 110]
+[50, 44, 37, 25, 67, 110]
+[44, 37, 25, 50, 67, 110]
+[37, 25, 44, 50, 67, 110]
+[25, 37, 44, 50, 67, 110]
 ```
 
 [参考](https://www.cnblogs.com/googlemeoften/p/5034008.html)
