@@ -4,16 +4,17 @@
     - [JVM内存模型](/java/jvm1)
     - [JMM与内存可见性](/java/jmm)
     - [类加载机制](/java/class)
+    - [多线程](/java/concurrent/)
+    - [集合](/java/collection/)
 
 - **[IO相关](/java/io/)**
     - [IO问答](/java/io/subject1)
-- **[消息队列](/java/jms/)**
-    - [MQTT](/java/jms/mqtt/mqtt)
-- **[多线程](/java/concurrent/)**
-- **[集合](/java/collection/)**
+- **[消息队列](/jms/)**
+    - [RabbitMQ](/jms/rabbitmq/)
+    - [MQTT](/jms/mqtt/mqtt)
 
-- **[Dubbo](/framework/dubbo/)**
-    - [Dubbo](/framework/dubbo/dubbo)
+- **[高并发](/concurrent/)**
+    - [限流](/concurrent/limit-rate)
 - **SpringBoot**
     - [SpringBoot](/framework/springboot/)
 
@@ -25,6 +26,7 @@
 
 - **NoSQL**
     - [Redis](/database/nosql/redis/)
+    - [MongoDB](/database/nosql/mongo/)
 
 - **设计模式**
     - [单例模式](/pattern/singleton)
@@ -48,6 +50,8 @@
 
 - **[Linux](/linux/)**
 
+- **[Dubbo](/framework/dubbo/)**
+    - [Dubbo](/framework/dubbo/dubbo)
 - **容器**
     - [Nginx](/container/nginx/)
     - [Tomcat](/container/tomcat/)
