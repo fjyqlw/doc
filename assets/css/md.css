@@ -1,0 +1,11 @@
+.sidebar-nav ul ul, .sidebar nav ul ul {
+    margin-left: 10px;
+}
+
+p {
+    display: block;
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

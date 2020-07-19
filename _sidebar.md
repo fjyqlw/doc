@@ -6,6 +6,7 @@
     - [类加载机制](/java/class)
     - [多线程](/java/concurrent/)
     - [集合](/java/collection/)
+    - [队列](/java/queue/)
 
 - **[IO相关](/java/io/)**
     - [IO问答](/java/io/subject1)
@@ -15,11 +16,11 @@
 
 - **[高并发](/concurrent/)**
     - [限流](/concurrent/limit-rate)
-- **SpringBoot**
-    - [SpringBoot](/framework/springboot/)
-
-- **SpringCloud**
-    - [SpringCloud](/framework/springcloud/)
+- **[Spring全家桶](/spring/)**
+    - [SpringBoot](/spring/springboot/)
+    - [SpringCloud](/spring/springcloud/)
+    - [SpringGateway](/spring/spring-gateway/)
+    - [SpringFeign](/spring/spring-feign/)
 
 - **[关系数据库](/database/relational/)**
     - [MySQL](/database/relational/mysql)
@@ -33,25 +34,32 @@
     - [装饰器模式](/pattern/decorator)
     - [代理模式](/pattern/proxy)
 
-- **[排序算法](/algorithm/sort/)**
-    - [冒泡排序](/algorithm/sort/bubble)
-    - [选择排序](/algorithm/sort/select)
-    - [插入排序](/algorithm/sort/insert)
-    - [希尔排序](/algorithm/sort/shell)
-    - [快速排序](/algorithm/sort/quick)
-    - [堆排序](/algorithm/sort/heap)
+- **[算法](/algorithm/)**
+    - **[排序算法](/algorithm/sort/)**
+        - [冒泡排序](/algorithm/sort/bubble)
+        - [选择排序](/algorithm/sort/select)
+        - [插入排序](/algorithm/sort/insert)
+        - [希尔排序](/algorithm/sort/shell)
+        - [快速排序](/algorithm/sort/quick)
+        - [堆排序](/algorithm/sort/heap)
+        - [冒泡排序](/algorithm/sort/bubble)
+        - [选择排序](/algorithm/sort/select)
+        - [插入排序](/algorithm/sort/insert)
+        - [希尔排序](/algorithm/sort/shell)
+        - [快速排序](/algorithm/sort/quick)
+        - [堆排序](/algorithm/sort/heap)
 
-- **[经典算法](/algorithm/)**
-    - [Top-K问题](/algorithm/top-k)
-    - [单链表是否成环](/algorithm/link-list-circle)
-    - [计算一个正整数的二进制有几个1](/algorithm/count-one)
+    - **[经典算法](/algorithm/classic/)**
+        - [Top-K问题](/algorithm/classic/top-k)
+        - [单链表是否成环](/algorithm/classic/link-list-circle)
+        - [计算一个正整数的二进制有几个1](/algorithm/classic/count-one)
 
 - **[前端](/web/)**
 
 - **[Linux](/linux/)**
 
-- **[Dubbo](/framework/dubbo/)**
-    - [Dubbo](/framework/dubbo/dubbo)
+- **[Dubbo](/spring/dubbo/)**
+    - [Dubbo](/spring/dubbo/dubbo)
 - **容器**
     - [Nginx](/container/nginx/)
     - [Tomcat](/container/tomcat/)
