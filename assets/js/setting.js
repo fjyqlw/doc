@@ -25,7 +25,7 @@ window.$docsify = {
     //文档标题，会显示在侧边栏顶部。
     name: '',
     //配置仓库地址或者 username/repo 的字符串，会在页面右上角渲染一个 GitHub Corner 挂件。
-    repo: '',
+    repo: 'https://github.com/fjyqlw/docs',
     //禁用 emoji 解析
     noEmoji: false,
     tocLevel: 6,
